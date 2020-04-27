@@ -1,4 +1,5 @@
 ﻿document.write(	'<div class="menu">'+
+				'<img src="image/logo.png"> '+
 				'<h1>Магазин &ldquo;Кошки-картошки&rdquo;</h1>'+
 				'<ul>'+
 					'<li><a href="index.html">Главная</a></li>'+
