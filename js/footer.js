@@ -1,2 +1,2 @@
-﻿document.write(	'&copy; Все права защищены'
+﻿document.write(	'<div class="footer">&copy; Все права защищены</div>'
 		);
