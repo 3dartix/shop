@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+
+body{
+    margin: 0;
+    background: #f8f8f8;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    width: 1170px;
+    height: inherit;
+    margin: auto;
+}
+.header{
+    position: relative;
+    height: 700px;
+    background-color: #abeafa;
+    font-family: 'Raleway', sans-serif;
+}
+.header .logo {
+    position: absolute;
+    margin: 24px 0 0 69px;
+    background: url("../img/logo/surfhouse_logo.png") no-repeat;
+    width: 125px;
+    height: 111px;
+}
+.header .welcome {
+    position: absolute;
+    margin: 335.7px 0 0 0px;
+    background: #fff51f;
+    width: 270px;
+    height: 300px;
+}
+.header .bunner {
+    position: absolute;
+    margin: 217.7px 0px 0 710px;
+    /*background: #fff51f;*/
+    width: 391px;
+    height: 336px;
+    color: #fff51f;
+    font-weight: 400;
+}
+.header .bunner p:first-child {
+    margin: 28px 38px 0px;
+    font-size: 48px;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.header .bunner p:last-child {
+    margin: 6px 38px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+.header .button {
+    position: absolute;
+    margin: 473.3px 0px 0 751px;
+    background: #fff51f;
+    padding: 17px 28px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+}
+.header .social_network_small {
+     display: flex;
+     width: 120px;
+     height: 16px;
+     color: white;
+     position: absolute;
+     margin: 50px 0px 0 986px;
+     /*background: #fff51f;*/
+     /*padding: 17px 28px 16px;*/
+     font-size: 16px;
+     font-weight: 400;
+     text-transform: uppercase;
+    justify-content: space-between;
+ }
+.header .welcome p {
+    font-weight: 900;
+}
+.header .welcome p:first-child{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 77px 0 0 26px;
+    line-height: 31.6px;
+}
+.header .welcome p:last-child{
+    font-size: 17px;
+    margin: 20px 0 0 22px;
+    line-height: 14.1px;
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+.body{
+    height: 2337px;
+}
+.body .content {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -20px;
+    grid-template-areas:
+            "ml mr"
+            "md md"
+}
+.menu_left{
+    grid-area: ml;
+    width: 270px;
+    height: 805px;
+}
+.menu_left .menu{
+    width: 270px;
+    height: 476px;
+}
+.menu_left .menu h1{
+    width: 270px;
+    height: 66px;
+    background: #333333;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 22px 42px 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.menu_left .menu .button {
+    height: 411px;
+}
+.menu_left .menu .button a p {
+    background: #26d2fc;
+    padding: 0.65px 40px    ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    color: black;
+}
+
+.menu_left .menu .button a p:hover {
+    background: #333333;
+    color: white;
+}
+
+.menu_left .banner{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 36px;
+    margin-top: 30px;
+    width: 270px;
+    height: 300px;
+    background: #e0e0e0;
+    font-size: 36px;
+    padding: 123px 51px 0 140px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.menu_right{
+    grid-area: mr;
+    background: #f8f8f8;
+    width: 870px;
+    height: 1644px;
+}
+.menu_right .new_products h1{
+    grid-area: h1;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 28px 24px 24px 24px;
+    letter-spacing: -0.4px;
+}
+.menu_right h1:nth-child(n+2){
+    margin: 73px 24px 24px 24px;
+}
+.menu_right .new_products {
+    display: grid;
+    grid-template-areas:
+            "h1 h1 h1"
+            "prd prd prd"
+            "prd prd prd"
+}
+.menu_right .new_products:nth-child(n+2) {
+    margin-top: 44px;
+}
+.menu_right .new_products:last-child {
+    margin-top: 51px;
+}
+.menu_right .new_products .product{
+    position: relative;
+    width: 270px;
+    height: 320px;
+    background: #ffffff;
+    justify-self: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_right .new_products .product .triangle{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.menu_right .new_products .product .triangle .corner_new {
+    border: 23.5px solid transparent;
+    border-top: 23.5px solid #e24602;
+    border-right: 23.5px solid #e24602;
+    color: white;
+}
+.menu_right .new_products .product .triangle .corner_hot {
+    border: 23.5px solid transparent;
+    border-top: 23.5px solid #faef03;
+    border-right: 23.5px solid #faef03;
+ }
+
+.menu_right .new_products .product .triangle i {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.menu_right .new_products .product:nth-child(3n+1){
+    justify-self: right;
+}
+.menu_right .new_products .product:nth-child(3n){
+    justify-self: center;
+}
+.menu_right .new_products .product:nth-child(n+5){
+    margin-top: 31px;
+}
+
+
+.menu_right .new_products .product .photo{
+    width: 250px;
+    height: 230px;
+    background-color: #eaeaea;
+    margin: 10px 10px 4px;
+}
+.menu_right .new_products .product .description{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    margin: 0 15px 17px 25px;
+    letter-spacing: -0.3px;
+}
+.menu_right .new_products .product .description .name{
+    width: 100%;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.menu_right .new_products .product .description .price {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: right;
+}
+.menu_right .new_products .product .description .price p {
+    margin-bottom: 0;
+}
+.menu_right .new_products .product .description .price p:last-child {
+    color: #e24602;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: line-through;
+    margin-top: 0;
+}
+
+
+.menu_down {
+    grid-area: md;
+    background: white;
+    height: 661px;
+    /* !!!почему-то не работает параметр bottom: 0; нужно было прижать блок к нижнему краю использовал  margin-top: auto;*/
+    margin-top: auto;
+}
+.menu_down .brand p{
+    background: url("../img/brands.png") no-repeat;
+    width: 1142px;
+    height: 26px;
+    margin: 70px 14px 64px 14px;
+}
+.menu_down .insta {
+    position: relative;
+    height: 351px;
+    background: #eaeaea;
+}
+.menu_down .insta .title {
+    position: relative;
+    height: 105px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /* Style for "Instagram" */
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 900;
+}
+.menu_down .insta .title p{
+    position: absolute;
+    left: 38.4%;
+    width: 400px;
+    top: 28%;
+    letter-spacing: -0.51px;
+}
+.title p img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.menu_down .insta .title p i{
+    letter-spacing: -0.5px;
+    font-size: 18px;
+}
+/*.menu_down .insta .title {*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    height: 105px;*/
+/*    width: 274px;*/
+/*    margin: auto;*/
+/*    background: green;*/
+/*}*/
+
+/*.menu_down .insta .title p{*/
+/*    margin: 0;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+
+/*    width: 238px;*/
+/*    height: 22px;*/
+/*    color: #333333;*/
+/*    font-family: "Roboto - Black Italic";*/
+/*    font-size: 22px;*/
+/*    font-weight: 400;*/
+/*    !* Text style for ": #surfhou" *!*/
+/*    font-size: 18px;*/
+/*}*/
+.menu_down .insta .photo {
+    display: flex;
+    justify-content: space-between;
+    /*background: orange;*/
+}
+.menu_down .socialNetwork {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    background: #008000;
+    text-align: center;
+    color: white;
+}
+.menu_down .socialNetwork .facebook {
+    width: 100%;
+    height: inherit;
+    background: #3b5997;
+}
+.menu_down .socialNetwork .twitter {
+    width: 100%;
+    background: #3fccfd;
+
+}
+.menu_down .socialNetwork .pinterest {
+    width: 100%;
+    background: #cb2027;
+}
+.menu_down .socialNetwork i{
+    margin-top: 42px;
+    font-size: 65px;
+}
+.footer {
+    height: 301px;
+    background-color: #373737;
+}
+.footer .content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footer .content ul{
+    list-style-type: none;
+}
+.footer .content li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 4px 0 0 -13px;
+}
+.footer .content h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.category_ourAccount_ourSupport {
+    height: inherit;
+    width: 69.6%;
+    /*background: indigo;*/
+}
+.newsletter, .about_us {
+    height: inherit;
+    width: 100%;
+    /*background: red;*/
+}
+.footer .content .category_ourAccount_ourSupport h3{
+    margin: 71px 0 27px 27px;
+}
+.footer .content .newsletter h3{
+    margin: 71px 0 10px 11px;
+}
+.footer .content .newsletter p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    margin: -4px 0 0 9px;
+    line-height: 12px;
+}
+.footer .content .newsletter .form {
+    margin: 18px 8px 20px 9px;
+}
+.footer .content .newsletter .form input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 180px;
+    height: 30px;
+    border: 0;
+    padding-left: 22px;
+    text-transform: uppercase;
+    background: #fff51f;
+}
+.footer .content .newsletter .form button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+    border: 0;
+    padding-left: 8px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+}
+.footer .content .newsletter .credit_cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 18px 0 0;
+}
+
+.footer .content .about_us h3{
+    margin: 73px 0 9px 28px;
+}
+.footer .content .about_us p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    margin: -5px 23px 0 28px;
+    letter-spacing: 0.06px;
+    line-height: 12px;
+}
+.footer .content .about_us .phone {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+.footer .content .about_us .email {
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+.footer .content .about_us .email i {
+    /*color: orange;*/
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.4px;
+    font-style: normal;
+}
+.footer_copyright {
+    height: 50px;
+    background-color: #333333;
+}
+.footer_copyright .content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.footer_copyright .content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #333333;
+    margin: 17px 0 0 5px;
+    letter-spacing: 0.15px;
+}
+.footer_copyright .content p i {
+    font-style: normal;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.footer_copyright .content div {
+    margin: 19px 22px 0 0;
+    width: 179px;
+    height: 15px;
+    color: white;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_copyright .content div i {
+    font-size: 15px;
+}

@@ -1,0 +1,1 @@
+document.write('<base href="D:/JavaGeekBrains/html_css/shop/">');
