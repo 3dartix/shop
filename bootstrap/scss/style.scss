@@ -1,0 +1,251 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+}
+
+%margin_and_padding {
+  margin: 0;
+  padding: 0;
+}
+
+.login{
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+
+  p{
+    margin: 10px;
+  }
+}
+
+.slider{
+  @extend %margin_and_padding;
+}
+
+.menu_block{
+  @extend %margin_and_padding;
+  display: flex;
+  flex-wrap: wrap;
+
+  .logo{
+    @extend %margin_and_padding;
+    //height: $heightMenu;
+    flex-grow: 1;
+    background: white;
+    align-items: center;
+
+    img{
+      margin: 0 auto;
+      height: 30px;
+    }
+
+    @media (max-width: $max-width-medium){
+      width: 100%;
+    }
+
+  }
+  .menu{
+    @extend %margin_and_padding;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    //min-height: $heightMenu;
+    flex-grow: 2;
+    //background: #3fccfd;
+
+    ul{
+      padding: 0!important;
+      margin: 10px 0;
+    }
+
+    li {
+      display: inline;
+      margin: 5px;
+
+      @media (max-width: $max-width-medium){
+        display: block;
+      }
+
+      hover{
+
+      }
+    }
+
+  }
+  .social_network{
+    @extend %margin_and_padding;
+    display: flex;
+    justify-content: center;
+    //height: $heightMenu;
+    flex-grow: 1;
+    //background: #3b5997;
+    //color: white;
+    align-items: center;
+
+    i{
+      margin: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: $max-width-medium){
+      width: 100%;
+    }
+  }
+}
+.slider{
+  position: relative;
+
+  .nameShop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    //align-items: center;
+    //background: #5a575a;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    color: black;
+    text-transform: uppercase;
+
+    p{
+      font-size: 50px;
+      //margin: 0 40px;
+    }
+    p:first-child{
+      font-size: 50px;
+      margin: 0 40px;
+    }
+    p:last-child{
+      width: 50%;
+      font-size: 12px;
+      margin: 0 40px;
+    }
+  }
+}
+.content{
+
+  @media (min-width: $max-width-extraLarge){
+    max-width: 70%!important;
+  }
+  @media (max-width: $max-width-small) {
+    padding: 0;
+  }
+
+  .products{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: $max-width-small) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .product{
+    @extend %margin_and_padding;
+    background: rgb(190, 189, 206);
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+
+    @media (min-width: $max-width-extraLarge){
+      background: red;
+      //width: calc(350px + 50px);
+      //height: calc(200px + 50px);
+    }
+
+    @media (max-width: $max-width-small) and (max-width: 1199px) {
+      background: green;
+    }
+
+    @media (max-width: $max-width-small) {
+      background: yellow;
+      width: 100%;
+      height: 300px;
+      min-width: 300px;
+      margin: 20px 0;
+    }
+  }
+}
+.footer{
+  @extend %margin_and_padding;
+  height: 50px;
+  background: black;
+}
+
+
+
+//.header {
+//  max-width: 100%;
+//  padding: 0;
+//}
+//
+//.menu_block {
+//  margin: 0;
+//
+//  .brand_logo{
+//    /*background: white;*/
+//    display: flex;
+//    justify-content: center;
+//    flex-grow: 1;
+//  }
+//  .brand_logo .logo{
+//    position: absolute;
+//    top: 30%;
+//  }
+//  .menu{
+//    display: flex;
+//    justify-content: center;
+//    flex-grow: 3;
+//    padding: 0;
+//  }
+//  .menu ul {
+//    list-style-type: none;
+//    padding: 0;
+//    margin: 40px;
+//  }
+//  .menu li{
+//    text-transform: uppercase;
+//    display: inline-block;
+//    align-content: center;
+//    margin: 0 10px;
+//  }
+//  .icons {
+//    font-size: 20px;
+//    display: flex;
+//    justify-content: center;
+//    /*background: wheat;*/
+//    color: black;
+//    padding: 0;
+//    margin: 40px;
+//  }
+//  .icons i{
+//    margin: 0 10px;
+//  }
+//}
+//.slider{
+//  margin: 0;
+//}
+//.slider img {
+//  width: 100%;
+//}
+//.products{
+//  margin: 20px;
+//}
+//.product{
+//  background: wheat;
+//  min-width: 200px;
+//  min-height: 300px;
+//  margin: 20px;
+//}
